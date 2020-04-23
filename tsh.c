@@ -358,7 +358,7 @@ eval(char *cmdline)
         io_redirect(&tok);
 
         //If execve does not return correctly, exit 
-        if (execve(tok.argv[0], tok.argv, environ) < 0);
+        if (execve(tok.argv[0], tok.argv, environ) < 0)
             exit(0);
       }
       
