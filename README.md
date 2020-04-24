@@ -8,9 +8,14 @@ Hello!
 
 ```tsh.c```
 - This file contains the implementation of the Simple Unix Shell
-- The shell supports the following commands:
-– The ```quit``` command terminates the shell.
-– The ```jobs``` command lists all background jobs.
-– The ```bg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the background. The <job> argument can be either a PID or a JID.
-  – The ```fg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the foreground. The <job> argument can be either a PID or a JID.
-  - The shell also supports I/O Redirection
+- The shell supports the following command
+                
+  - The ```quit``` command terminates the shell.
+
+  - The ```jobs``` command lists all background jobs.
+
+  - The ```bg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the background. The <job> argument can be either a PID or a JID.
+
+  - The ```fg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the foreground. The <job> argument can be either a PID or a JID.
+
+- The shell also supports I/O Redirection
