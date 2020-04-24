@@ -8,7 +8,7 @@ Hello!
 
 ```tsh.c```
 - This file contains the implementation of the Simple Unix Shell
-- The shell supports the following command
+- The shell supports the following built-in commands
                 
   - The ```quit``` command terminates the shell.
 
