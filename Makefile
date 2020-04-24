@@ -20,7 +20,7 @@ tsh: tsh.c fork.c
 
 sdriver: sdriver.o
 sdriver.o: sdriver.c config.h
-runtrace.o: runtrace.c config.h
+#runtrace.o: runtrace.c config.h
 
 # Clean up
 clean:
