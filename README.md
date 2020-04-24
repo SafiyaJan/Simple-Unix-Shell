@@ -12,5 +12,5 @@ Hello!
 – The ```quit``` command terminates the shell.
 – The ```jobs``` command lists all background jobs.
 – The ```bg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the background. The <job> argument can be either a PID or a JID.
-– The ```fg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the foreground. The <job> argument can be either a PID or a JID.
-- The shell also supports I/O Redirection
+  – The ```fg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the foreground. The <job> argument can be either a PID or a JID.
+  - The shell also supports I/O Redirection
