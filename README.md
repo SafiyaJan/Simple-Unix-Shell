@@ -32,7 +32,7 @@ Below you can see a partial list of all the commands that the shell can handle a
 ./tsh
 tsh> /bin/ls /bin 
 ``` 
-<img src="ls_example.png" width = "400" >
+<img src="ls_example.png" width = "500" >
 
 #### Example 2 - Running an executable within the shell 
 
@@ -52,4 +52,4 @@ tsh> /bin/kill -9 <PID> #PID is the ID of the process
 
 The shell provides a builtin command, ```jobs``` that displays all the processes that are currently running. You can use this command by executing a bunch of different commands and typing ```jobs``` to get back a list of all the jobs that are being done.
 
-<img src="jobs_example.png" width = "200" >
+<img src="jobs_example.png" width = "500" >
