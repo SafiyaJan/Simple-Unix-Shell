@@ -37,11 +37,17 @@ tsh> /bin/ls /bin
 #### Example 2 - Running an executable within the shell 
 
 If you have an executable within the same directory as the shell, you can run that executable under the shell. For example, the executable ```myspin1``` can be run as a background process by running the following command:
-
 ```
 ./tsh
 tsh> ./myspin1 &   # the ampersand runs that executable in the background
 ``` 
-<img src="exec_example.png" width = "400" >
+The process can also be killed by sending a kill signal on the process by running the following command:
 
+``` tsh> /bin/kill -9 <PID> #PID is the ID of the process ```
+<img src="exec_example.png" width = "200" >
 
+#### Example 3 - Displaying the current running jobs 
+
+The shell provides a builtin command, ```jobs``` that displays all the processes that are currently running. You can use this command by executing a bunch of different commands and typing ```jobs``` to get back a list of all the jobs that are being done.
+
+<img src="jobs_example.png" width = "200" >
