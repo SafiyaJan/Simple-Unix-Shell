@@ -16,10 +16,32 @@ Ensure that you run the Shell on a Linux machine, as some of the libraries requi
 
 ### Installing
 
-In order to create the Shell executable, type the follwing command on your machine's CLI:
+ - In order to create the Shell executable, type the follwing command on your machine's CLI:
 ```make```
-To run the Shell, type the follwing command on your machine's CLI:
+ - To run the Shell, type the follwing command on your machine's CLI:
 ```./tsh```
 
+### Usage
+
+- The shell supports all commands that are present under ```/bin``` directory including primitive commands such ```ls, cat, mkdir and chmod```
+
+#### Example 1 - Running the ```ls``` command
+
+Below you can see a partial list of all the commands that the shell can handle and this was done by running the command following commands:
+```
+./tsh
+tsh> /bin/ls /bin 
+``` 
+<img src="ls_example.png" width = "400" >
+
+#### Example 2 - Running an executable within the shell 
+
+If you have an executable within the same directory as the shell, you can run that executable under the shell. For example, the executable ```myspin1``` can be run as a background process by running the following command:
+
+```
+./tsh
+tsh> ./myspin1 &   # the ampersand runs that executable in the background
+``` 
+<img src="exec_example.png" width = "400" >
 
 
