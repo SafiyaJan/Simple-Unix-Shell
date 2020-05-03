@@ -43,7 +43,9 @@ tsh> ./myspin1 &   # the ampersand runs that executable in the background
 ``` 
 The process can also be killed by sending a kill signal on the process by running the following command:
 
-``` tsh> /bin/kill -9 <PID> #PID is the ID of the process ```
+``` tsh> /bin/kill -9 <PID> #PID is the ID of the process
+```
+
 <img src="exec_example.png" width = "200" >
 
 #### Example 3 - Displaying the current running jobs 
