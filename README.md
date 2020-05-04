@@ -23,7 +23,17 @@ Ensure that you run the Shell on a Linux machine, as some of the libraries requi
 
 ### Usage
 
-- The shell supports all commands that are present under ```/bin``` directory including primitive commands such ```ls, cat, mkdir and chmod```
+The shell supports all commands that are present under ```/bin``` directory including primitive commands such ```ls, cat, mkdir and chmod```
+
+#### Built-in Commands
+
+Alone with being able to run all the commands under the ```/bin``` directory, the shell is able to handle the following builtin commands as well:
+
+- The ```quit``` command terminates the shell.
+- The ```jobs``` command lists all background jobs.
+- The ```bg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the background. The <job> argument can be either a PID or a JID.
+- The ```fg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the foreground. The <job> argument can be either a PID or a JID.
+
 
 #### Example 1 - Running the ```ls``` command
 
@@ -53,3 +63,5 @@ tsh> /bin/kill -9 <PID> #PID is the ID of the process
 The shell provides a builtin command, ```jobs``` that displays all the processes that are currently running. You can use this command by executing a bunch of different commands and typing ```jobs``` to get back a list of all the jobs that are being done.
 
 <img src="jobs_example.png" width = "300" >
+
+
