@@ -27,15 +27,23 @@ The shell supports all commands that are present under ```/bin``` directory incl
 
 #### Built-in Commands
 
-Alone with being able to run all the commands under the ```/bin``` directory, the shell is able to handle the following builtin commands as well:
+Along with being able to run all the commands under the ```/bin``` directory, the shell is able to handle the following builtin commands as well:
 
 - The ```quit``` command terminates the shell.
 - The ```jobs``` command lists all background jobs.
 - The ```bg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the background. The <job> argument can be either a PID or a JID.
 - The ```fg <job>``` command restarts <job> by sending it a SIGCONT signal, and then runs it in the foreground. The <job> argument can be either a PID or a JID.
 
+#### I/O Redirection
 
-#### Example 1 - Running the ```ls``` command
+The shell supports I/O redirection meaning that STDIN and STDOUT can be redirected to files on disk. This can be done as follows:
+
+```
+tsh> /bin/ls > ls.txt  # outputs a list of all files/folders into ls.txt
+tsh> /bin/cat < ls.txt # prints out the contects of ls.txt to STDOUT
+```
+
+#### Usage Example 1 - Running the ```ls``` command
 
 Below you can see a partial list of all the commands that the shell can handle and this was done by running the command following commands:
 ```
@@ -44,7 +52,7 @@ tsh> /bin/ls /bin
 ``` 
 <img src="ls_example.png" width = "300" >
 
-#### Example 2 - Running an executable within the shell 
+#### Usage Example 2 - Running an executable within the shell 
 
 If you have an executable within the same directory as the shell, you can run that executable under the shell. For example, the executable ```myspin1``` can be run as a background process by running the following command:
 ```
@@ -52,13 +60,12 @@ If you have an executable within the same directory as the shell, you can run th
 tsh> ./myspin1 &   # the ampersand runs that executable in the background
 ``` 
 The process can also be killed by sending a kill signal on the process by running the following command:
-
 ```
 tsh> /bin/kill -9 <PID> #PID is the ID of the process
 ```
 <img src="exec_example.png" width = "300" >
 
-#### Example 3 - Displaying the current running jobs 
+#### Usage Example 3 - Displaying the current running jobs 
 
 The shell provides a builtin command, ```jobs``` that displays all the processes that are currently running. You can use this command by executing a bunch of different commands and typing ```jobs``` to get back a list of all the jobs that are being done.
 
