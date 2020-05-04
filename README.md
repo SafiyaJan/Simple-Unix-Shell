@@ -21,7 +21,7 @@ Ensure that you run the Shell on a Linux machine, as some of the libraries requi
  - To run the Shell, type the follwing command on your machine's CLI:
 ```./tsh```
 
-### Usage
+## Usage
 
 The shell supports all commands that are present under ```/bin``` directory including primitive commands such ```ls, cat, mkdir and chmod```
 
