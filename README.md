@@ -6,7 +6,7 @@ The simple shell that I have created here was done in order to achieve a deeper 
  
 ## Getting Started
 
-In order to run the Simple Unix Shell, firstly, you must clone the repository on your local machine. You can do this by running the following line on your machine's CLI:
+In order to run the Unix Shell, firstly, you must clone the repository on your local machine. You can do this by running the following line on your machine's CLI:
 
 ```git clone https://github.com/SafiyaJan/Simple-Unix-Shell.git```
 
